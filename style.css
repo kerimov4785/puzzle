@@ -1,0 +1,131 @@
+#puzzle{
+    width: 700px;
+    height: 500px;
+}
+#puzzle img{
+    width: 100%;
+    height: 100%;
+    opacity: .5;
+}
+.options{
+    display: flex;  
+    gap: 20px;
+    margin-top: 200px;
+}
+.options > div{
+    box-shadow: 0 0 10px #000;
+    width: 300px;
+    height: 170px;
+    align-content: center;
+    cursor: pointer;
+}
+body{
+    background-color: rgb(26, 25, 36); /* #1a1924 */
+}
+#title1{
+    font: 400 90px 'Geo';
+    text-transform: uppercase;
+    width: 100%;
+    color: azure;
+    text-align: center;
+}
+#start{
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    height: 100vh;
+    justify-content: center;
+}
+.play_button{
+    margin: auto;
+    width: 100px ;
+    text-align: center;
+    align-content: center;
+    height: 100px ;
+    background-color: rgba(11, 11, 61, 0.884);
+    border-radius: 50%;
+    font: 600 24px arial;
+    color: white;
+    transition: 0.5s cubic-bezier(1, 0, 0, 1);
+    transform: scale(0);
+}
+.bg{
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.452);
+    z-index: 1;
+}
+#alert{
+    width: 350px;
+    text-align: center;
+    padding: 30px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(207, 207, 236);
+    gap: 10px;
+    transform: scale(1.2);
+}
+#alert div{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+#alert p{
+    cursor: pointer;
+    background-color:white;
+    padding: 10px 20px;
+    flex: 1;
+    font: 400 18px arial;
+    text-align: center;
+    transition: .4s;
+}
+#alert p:hover{
+    color: white;
+    background-color: #1a1924;
+}
+#alert h3{
+    font: 600 30px Arial;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+#game{
+    display: none;
+    height: 100vh;
+    align-items: start;
+}
+#game_field{
+    margin: 10px 0 0 10px;
+    position: relative;
+    border: 2px solid white ;
+    box-sizing: content-box;
+}
+#game_field > div{
+    position: absolute;
+}
+#game_field > button {
+    cursor: pointer;
+    padding: 6px;
+    text-transform: uppercase;
+    font: 600 14px arial;
+    border: none;
+    position: absolute;
+    background-color:beige;
+    color: #1a1924;
+    bottom: -40px;
+}
+.miniPicture{
+    position: absolute;
+    right: -220px;
+    top: -2px;
+    width: 200px;
+    height: 130px;
+    border: 2px solid white;
+}
