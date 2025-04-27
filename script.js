@@ -143,7 +143,7 @@ let ok = false
 function showPhoto() {
     if (ok) {
         $('#btn1').text('click to hide picture')
-        gameField.css({ background: `linear-gradient(rgba(26, 25, 36, 0.81), rgba(26, 25, 36, 0.81)),  url(./img/p1.png) `, })
+        gameField.css({ background: `linear-gradient(rgba(26, 25, 36, 0.81), rgba(26, 25, 36, 0.81)),  url(./img/${selectedPicture}) `, })
         ok = false
     }
     else {
